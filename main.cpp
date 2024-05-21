@@ -21,8 +21,8 @@ int main() {
     }
 
     int maxDistance = 0;
-    for (int i = 0; i < numElements - 1; ++i) {
-        for (int j = 0; j < numElements; ++j) {
+    for (int i = 0; i < numElements; ++i) {
+        for (int j = i + 1; j < numElements; ++j) {
             maxDistance = max(maxDistance, static_cast<int>(pow(xValues[i] - xValues[j], 2) + pow(yValues[i] - yValues[j], 2)));
         }
     }
