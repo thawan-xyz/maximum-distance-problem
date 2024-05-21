@@ -23,7 +23,7 @@ int main() {
     int maxDistance = 0;
     for (int i = 0; i < numElements; ++i) {
         for (int j = i + 1; j < numElements; ++j) {
-            maxDistance = max(maxDistance, static_cast<int>(pow(xValues[i] - xValues[j], 2) + pow(yValues[i] - yValues[j], 2)));
+            maxDistance = max(maxDistance, int(pow(xValues[i] - xValues[j], 2) + pow(yValues[i] - yValues[j], 2)));
         }
     }
     cout << maxDistance << "\n";
